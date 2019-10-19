@@ -21,7 +21,10 @@ Leiningen: Build automation and dependency management tool
 
 ## Options
 
-## Examples
+## How to run Ring server
+
+* lein ring server-headless
+
 
 ...
 
