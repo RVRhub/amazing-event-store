@@ -8,11 +8,13 @@
          :port 4001
          :destroy amazing-event-store.course-api/on-destroy}
   :dependencies [[org.clojure/clojure "1.10.0"]
+                 [org.clojure/test.generative "0.5.2"]
                  [ring "1.7.1"]
                  [org.clojure/data.json "0.2.6"]
                  [org.postgresql/postgresql "42.2.8"]
                  [org.clojure/java.jdbc "0.6.1"]
-                 [korma/korma "0.4.3"]]
+                 [korma/korma "0.4.3"]
+                 [com.datomic/datomic-free "0.9.5697"]]
   :main ^:skip-aot amazing-event-store.core
   :target-path "target/%s"
   :profiles {:uberjar {:aot :all}})
